@@ -22,7 +22,7 @@
 
     <section class="about">
         <h2>About Us</h2>
-        <p class="intro">Welcome to Michibuns Special Burgers! Founded in 2020 in the heart of Novaliches, Quezon City, Michibuns is your go-to spot for affordable, mouth-watering burgers that never compromise on taste. Our mission is simple: to serve "Mura na Masarap pa" (Cheap but Delicious) meals that bring joy to every bite. From our juicy Cheeseburgers to our crispy Chicken Sandwiches, every item is made with fresh ingredients and a whole lot of love. Whether you're grabbing a quick meal or ordering for delivery, we're here to satisfy your cravings. Join our family and experience the Michibuns difference!</p>
+        <p class="intro">Welcome to Michibuns Special Burgers! Founded in 2025 in the heart of Novaliches, Quezon City, Michibuns is your go-to spot for affordable, mouth-watering burgers that never compromise on taste. Our mission is simple: to serve "Mura na Masarap pa" (Cheap but Delicious) meals that bring joy to every bite. From our juicy Cheeseburgers to our crispy Chicken Sandwiches, every item is made with fresh ingredients and a whole lot of love. Whether you're grabbing a quick meal or ordering for delivery, we're here to satisfy your cravings. Join our family and experience the Michibuns difference!</p>
         
         <div class="features">
             <div class="feature">
@@ -120,7 +120,8 @@
         <button type="submit"><i class="fas fa-paper-plane"></i> Place Order</button>
     </form>
 
-    <script>
+
+<script>
         let order = [];
         function addToOrder(item, price) {
             order.push({ item, price });
@@ -143,8 +144,15 @@
         function submitOrder(event) {
             event.preventDefault();
             alert('Ordered Successful! (Salamat po.)');
+            window.location.reload();
         }
-    </script>
 
+        window.addEventListener('load', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
     <footer>
-        <p>Copyright © 2025 Michibuns. All rights reserved. <i class="fas fa-ut
+        <p>Copyright © 2025 Michibuns. All rights reserved.</p>
+    </footer>
+</body>
+</html>
